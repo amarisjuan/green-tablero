@@ -1,0 +1,1 @@
+{"smtpConfigurado": true, "remitente": "", "config": {"activo": true, "modo": "PRUEBA", "correoPrueba": null, "diasSemana": ["LUN", "MIE", "VIE"], "fechas": [], "hora": "08:00:00", "cantidad": 5}, "proximoEnvio": "2026-11-25T08:00:00", "enviadoHoy": false, "zona": "America/Bogota", "clientesConCorreo": 0}

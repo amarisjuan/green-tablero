@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0A2E25">
+  <title>Green Services · Inteligencia Comercial</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F7B5F'/%3E%3Cpath d='M9 21c0-7 5-12 14-12-1 9-6 14-13 13' fill='none' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <style>.banda-demo{background:#FFF6D9;border-bottom:1px solid #F0D98A;color:#5C4A0B;font-size:13px;padding:9px 24px;text-align:center}</style>
+  <meta name="robots" content="noindex">
+  <script src="chart.umd.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+<aside class="menu" id="menu">
+  <a class="marca" href="#llamada">
+    <svg class="logo" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="url(#gl)"/><path d="M11 27c0-9 6.5-15.5 18-15.5-1.2 11.5-7.8 17.6-16.8 16.6" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round"/><path d="M13.5 26.5 22 18" stroke="#fff" stroke-width="2.2" stroke-linecap="round" opacity=".75"/><defs><linearGradient id="gl" x1="0" y1="0" x2="40" y2="40"><stop stop-color="#23A47F"/><stop offset="1" stop-color="#0B6A51"/></linearGradient></defs></svg>
+    <div><strong>Green Services</strong><span>Inteligencia comercial</span></div>
+  </a>
+  <nav>
+    <div class="nav-titulo">Hoy</div>
+    <a href="#llamada" data-sec="llamada"><i data-ico="phone"></i>Llamada del día</a>
+    <div class="nav-titulo">Análisis</div>
+    <a href="#resumen" data-sec="resumen"><i data-ico="chart"></i>Resumen comercial</a>
+    <a href="#clientes" data-sec="clientes"><i data-ico="users"></i>Clientes y segmentos</a>
+    <a href="#ficha" data-sec="ficha"><i data-ico="user"></i>Ficha del cliente</a>
+    <div class="nav-titulo">Oportunidades</div>
+    <a href="#alertas" data-sec="alertas"><i data-ico="bell"></i>Alertas del mes</a>
+    <a href="#renovaciones" data-sec="renovaciones"><i data-ico="refresh"></i>Renovaciones</a>
+    <div class="nav-titulo">Automatización</div>
+    <a href="#envios" data-sec="envios"><i data-ico="send"></i>Envíos programados</a>
+  </nav>
+  <div class="pie-menu" id="pieMenu">
+    <div class="corte-card">
+      <div class="aviso">Datos de prueba del reto</div>
+      <div id="corteMenu"></div>
+    </div>
+  </div>
+</aside>
+<div class="velo" id="velo"></div>
+<div class="app">
+  <header class="barra">
+    <button class="hamburguesa" id="hamburguesa" aria-label="Abrir menú"><i data-ico="menu"></i></button>
+    <div class="barra-titulo"><span id="barraSeccion">Green Services</span></div>
+    <label class="buscador"><i data-ico="search"></i><input id="buscarCliente" placeholder="Buscar cliente (ej. CLI025)" autocomplete="off"></label>
+    <span class="pildora" id="pildoraCorte">Corte —</span>
+    <div class="perfil" title="Equipo comercial"><span>EC</span><div><b>Equipo comercial</b><small>Green Services</small></div></div>
+  </header>
+  <div class="banda-demo"><b>Demostración con datos de prueba.</b> Ninguna cifra es un resultado real de Green Services. Esta versión es solo para ver: no carga datos, no guarda cambios ni envía correos.</div>
+  <main id="contenido"><div class="cargando"><span class="giro"></span>Cargando…</div></main>
+  <footer class="pie">Green Services and Solutions SAS · Tablero comercial · Indicadores con datos de prueba; no son resultados reales.</footer>
+</div>
+<div class="toast" id="toast"></div>
+</body>
+</html>
